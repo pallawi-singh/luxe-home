@@ -1,0 +1,217 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* opacity: 0.9; */
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+  
+}
+
+
+.logo {
+    font-family: 'Alex Brush';
+    font-size: 36px;
+    color: #356f63 !important;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: var(--text-green);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #356f63;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px !important;
+    align-items: center;
+    color: var(--text-green);
+    cursor: pointer;
+}
+
+.Signin-btn {
+    background: #356f63 !important;
+    color: white;
+    padding: 3px 15px !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+}
+
+.Signin-btn:hover {
+    background: var(--bg-lighter) !important;
+    color: var(--text-green) !important;
+    font-weight: 500;
+}
+
+.cart-icon {
+    color: var(--text-green);
+    font-size: 28px;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background: var(--bg-light);
+    border-radius: 5px;
+    top: 10px;
+    right: 8px;
+}
+
+.navbar .active {
+    color: var(--text-light);
+    padding-bottom: 2px;
+    border-bottom: 2px solid #356f63;
+}
+
+.nav-profile {
+    position: relative;
+}
+
+.nav-profile img {
+    width: 40px;
+    mix-blend-mode: multiply;
+    padding-right: 10px;
+}
+
+.nav-profile-dropdown {
+    width: 110px;
+    position: absolute;
+    display: none;
+    top: 42px;
+    right: -6px;
+    z-index: 1;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown li p {
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+.nav-profile-dropdown li img {
+    width: 20px;
+}
+
+.nav-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 12px;
+    border: 2px solid #356f63;
+    border-radius: 10px;
+    list-style: none;
+
+}
+
+.nav-profile-dropdown li:hover {
+    color: var(--text-light);
+}
+
+@media(max-width:1050px) {
+    .navbar .logo {
+        font-size: 36px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right .Signin-btn {
+        padding: 8px 25px;
+    }
+
+    .navbar-right .cart-icon {
+        font-size: 28px;
+    }
+
+
+}
+
+@media(max-width:900px) {
+    .navbar .logo {
+        font-size: 30px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right .Signin-btn {
+        padding: 6px 20px;
+    }
+
+    .navbar-right .cart-icon {
+        font-size: 22px;
+    }
+
+
+}
+
+@media(max-width:700px) {
+    .navbar .logo {
+        font-size: 24px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right .Signin-btn {
+        padding: 4px 10px;
+    }
+
+    .navbar-right .cart-icon {
+        font-size: 22px;
+    }
+
+
+}

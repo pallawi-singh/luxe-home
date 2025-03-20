@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+.logo {
+    font-family: 'Alex Brush';
+    font-size: 36px;
+    color: #356f63 !important;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar span{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.navbar img{
+    width: 70px;
+    border-radius: 50rem;
+}

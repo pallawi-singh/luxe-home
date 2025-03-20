@@ -1,0 +1,86 @@
+/* utility css start here */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,300;0,400;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+
+
+  --bg-green: #1d4c42;
+  --text-green: #356f63;
+  --bg-yellow: ##ffff66;
+  --text-yellow: ##ffff66;
+  --bg-lighter: #f9f4f0;
+  --text-lighter: #f9f4f0;
+  --bg-light: #53aa99;
+  --text-light: #53aa99;
+  --bg-blue: #023D54;
+  --text-blue: #023D54;
+
+}
+
+.bg-green {
+  background: var(--bg-green);
+}
+
+.text-green {
+  color: var(--text-green);
+}
+
+.bg-lightest {
+  background: var(--bg-lightest) !important;
+}
+
+.text-lightest {
+  color: var(--text-lightest) !important;
+}
+
+
+.text-lighter {
+  color: var(--text-lighter) !important;
+}
+
+.bg-lighter {
+  background: var(--bg-lighter) !important;
+}
+
+.bg-light {
+  background: var(--bg-light) !important;
+}
+
+.text-light {
+  color: var(--bg-light) !important;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body{
+  min-width: 100vh;
+  background: var(--bg-lighter);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/* hr{
+  border: none;
+  height: 1px;
+} */
+.app-content{
+  display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* utility css end here */

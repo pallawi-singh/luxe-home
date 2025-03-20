@@ -1,0 +1,39 @@
+.footer {
+    background: var(--bg-lighter);
+    padding: 50px 0 20px 0;
+    color: var(--text-blue);
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.Logo {
+    font-family: 'Alex Brush';
+    font-size: 32px !important;
+    color: #356f63 !important;
+    font-weight: 800;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+}
+.footer-copyright {
+    text-align: center;
+}

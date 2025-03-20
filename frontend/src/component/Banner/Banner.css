@@ -1,0 +1,9 @@
+.Skew-btn {
+    border-radius: 0 !important;
+    background: white !important;
+    color: #356f63 !important;
+    transform: skew(-3deg, -3deg);
+    box-shadow: 2px 3px 5px #356f63;
+
+}
+

@@ -1,0 +1,29 @@
+.sidebar {
+    width: 20%;
+    min-height: 100vh;
+    border: 1.5px solid #ccc;
+}
+
+.sidebar-options {
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.siderbar-option {
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    padding: 8px 10px;
+    color: var(--text-blue);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.sidebar-options .active {
+    background:var(--bg-light);
+   color: var(--text-lighter);
+}
