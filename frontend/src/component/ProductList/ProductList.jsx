@@ -13,8 +13,8 @@ const ProductList = ({ id, image, name, description, price }) => {
     return (
         <div className='product-list'>
             <div className="product-list-img-container">
-                <img className='product-img' src={url+"/images/"+image} alt="Vishnu plant" />
-                {/* <img className='product-img' src={image} alt="" /> */}
+{/*                 <img className='product-img' src={url+"/images/"+image} alt="Vishnu plant" /> */}
+                <img className='product-img' src={image} alt="" />
 
                 {!cartProduct[id]
                     ?
