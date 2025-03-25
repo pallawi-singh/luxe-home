@@ -5,12 +5,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-  "server":"nodemon server.js"
+    "server": "nodemon server.js",
+      "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "body-parse": "^0.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
